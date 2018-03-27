@@ -1,7 +1,6 @@
 'use strict';
 
 const express = require('express');
-const dotenv = require('dotenv');
 const mongoose = require('mongoose');
 const User = require('../model/user.js');
 const getCreds = require('../lib/authorization.js');

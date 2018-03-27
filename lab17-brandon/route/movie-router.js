@@ -22,7 +22,7 @@ router.post('/movies', bearerMiddlewear, express.json(), (req, res) => {
 });
 
 // GET request
-// pass the id of a resource though the url queryparams and use req.query to fetch a resource
+// pass the id of a resource though the url query params and use req.query to fetch a resource
 router.get('/movies', bearerMiddlewear, (req, res) => {
   MovieRating.find()
   .then(movies => res.json(movies))

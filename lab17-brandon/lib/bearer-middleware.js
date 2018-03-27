@@ -1,4 +1,5 @@
 'use strict';
+
 const jwt = require('jsonwebtoken');
 const User = require('../model/user.js');
 
@@ -16,4 +17,4 @@ function processBearer(req, res, next) {
  });
 }
 
-   module.exports = processBearer
+   module.exports = processBearer;
